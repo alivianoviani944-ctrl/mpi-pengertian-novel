@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e8f5ff">
+<title>MPI Bahasa Indonesia | Pengertian Novel</title>
+<style>
+:root{--blue:#8fc8f4;--blue-deep:#477ba9;--blue-pale:#e8f5ff;--pink:#f2b5cf;--pink-deep:#c56e98;--pink-pale:#fff0f6;--ink:#30445e;--muted:#6b7f95;--white:#fff;--line:#d8e7f2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:linear-gradient(135deg,#e8f6ff 0%,#fff1f7 55%,#edf8ff 100%);min-height:100vh}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff;padding:12px max(16px,calc((100% - 1080px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-weight:900;letter-spacing:.5px;color:var(--blue-deep)}.brand span{color:var(--pink-deep)}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+button,.navbtn{font:inherit;font-size:.92rem;font-weight:750;border:0;border-radius:13px;padding:10px 13px;background:white;color:var(--ink);cursor:pointer;box-shadow:0 4px 13px #597d9915;transition:.18s}
+button:hover{transform:translateY(-1px);background:var(--pink-pale)}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #6eb7ed;outline-offset:2px}
+button.primary{background:linear-gradient(110deg,#a4d8fb,#f7c1d8)}button.softpink{background:var(--pink-pale)}
+main{max-width:1040px;margin:auto;padding:18px 18px 46px}
+.hero,.panel{background:#ffffffdf;border:1px solid #fff;border-radius:26px;padding:clamp(22px,4vw,40px);margin:17px 0;box-shadow:0 12px 35px #6388a51a}
+.hero{text-align:center;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;width:125px;height:125px;border-radius:50%;opacity:.45;pointer-events:none}
+.hero:before{background:var(--blue);top:-65px;left:-35px}.hero:after{background:var(--pink);right:-45px;bottom:-65px}
+.hero>*{position:relative;z-index:1}
+.eyebrow{display:inline-block;padding:8px 14px;border-radius:99px;background:var(--pink-pale);font-size:.78rem;font-weight:850;letter-spacing:.7px}
+h1{font-size:clamp(2.4rem,7vw,4.7rem);line-height:1.02;letter-spacing:-1.6px;margin:20px 0 14px;color:var(--blue-deep)}
+h1 span{color:var(--pink-deep)}h2{font-size:clamp(1.4rem,3vw,2rem);color:var(--blue-deep);margin:0 0 15px}h3{color:var(--pink-deep);margin:0 0 8px}
+p,li{line-height:1.75}.lead{max-width:730px;margin:0 auto 18px;font-size:1.08rem;line-height:1.8}
+.decor{font-size:1.8rem;margin:10px}.subtle{color:var(--muted);font-size:.91rem}.section-tag{color:var(--pink-deep);font-size:.8rem;font-weight:850;letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
+.tile{padding:18px;border-radius:19px;background:linear-gradient(145deg,#eaf7ff,#fff1f7);border:1px solid white}
+.tile p{margin-bottom:0}.number{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:11px;background:white;color:var(--blue-deep);font-weight:900;margin-bottom:10px}
+.quote{padding:17px 18px;border-radius:17px;background:var(--blue-pale);border-left:5px solid var(--blue);margin:13px 0}
+.quote.pink{background:var(--pink-pale);border-left-color:var(--pink)}
+.quote p{margin:8px 0}.note{background:#f7f9fc;border:1px dashed #c6d8e7;border-radius:14px;padding:14px 16px}
+.actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:20px}
+.hidden{display:none!important}
+.progress-wrap{height:7px;border-radius:99px;background:#e9eef4;overflow:hidden;margin:15px 0}.progress{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--pink));transition:width .3s}
+.question{padding:17px;margin:13px 0;border:1px solid var(--line);border-radius:17px;background:#fff}
+.question p{margin:0 0 9px}.choice{display:block;padding:10px 12px;margin:7px 0;border:1px solid #dce8f1;border-radius:12px;cursor:pointer;background:#fbfdff;line-height:1.5}
+.choice:has(input:checked){background:var(--pink-pale);border-color:#e5a2c1}
+.feedback{font-weight:750;line-height:1.7;margin-top:13px}
+label.field{display:block;font-weight:800;margin:14px 0 7px}
+input[type=text],textarea,select{width:100%;font:inherit;color:var(--ink);padding:12px 13px;border-radius:13px;border:1px solid #cbdce9;background:#fff}
+textarea{min-height:84px;resize:vertical}
+.ref-card{padding:19px;border-radius:19px;background:linear-gradient(135deg,#eff8ff,#fff0f6);border:1px solid white;margin:14px 0}
+.ref-card .small-label{font-size:.82rem;font-weight:850;color:var(--pink-deep);letter-spacing:.3px}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:8px}
+.scale label{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px 4px;border-radius:13px;background:white;border:1px solid var(--line);cursor:pointer;font-size:.82rem;text-align:center}
+.scale input{accent-color:#d879a2}.scale label:has(input:checked){background:var(--pink-pale);border-color:var(--pink)}
+.sources a{color:var(--blue-deep);overflow-wrap:anywhere}.sources li{margin-bottom:10px}
+.footer{text-align:center;padding:18px 14px;color:var(--muted);font-size:.88rem}
+.toast{border-radius:14px;padding:12px 14px;background:var(--blue-pale);margin-top:12px}
+@media(max-width:650px){header{position:static;justify-content:center}nav{justify-content:center}nav button{padding:9px 10px;font-size:.83rem}.hero,.panel{border-radius:21px}.scale{grid-template-columns:repeat(3,1fr)}}
+@media print{header,.actions,button{display:none!important}body{background:white}.hero,.panel{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">✦ RUANG SASTRA <span>♡</span></div>
+  <nav aria-label="Navigasi utama">
+    <button onclick="showPage('home')">Beranda</button>
+    <button onclick="showPage('pendahuluan')">Pendahuluan</button>
+    <button onclick="showPage('materi')">Materi</button>
+    <button onclick="showPage('kuis')">Kuis</button>
+    <button onclick="showPage('berlatih')">Berlatih</button>
+    <button onclick="showPage('rekap')">Rekap Nilai</button>
+    <button onclick="showPage('bermain')">Bermain</button>
+    <button onclick="showPage('refleksi')">Refleksi</button>
+  </nav>
+</header>
+<main>
+<section id="home" class="hero">
+  <div class="decor">☁️ 🩵 📖 🩷 ☁️</div>
+  <div class="eyebrow">MEDIA PEMBELAJARAN INTERAKTIF • BAHASA INDONESIA</div>
+  <h1>Pengertian<br><span>Novel</span></h1>
+  <p class="lead">Yuk, mengenal pengertian novel melalui beberapa sumber tepercaya dan memahami maknanya dengan bahasa yang sederhana.</p>
+  <p><b>Belajar sastra dengan santai, satu halaman demi satu halaman. ♡</b></p>
+  <div class="actions">
+    <button class="primary" onclick="showPage('pendahuluan')">Mulai Belajar →</button>
+    <button class="softpink" onclick="showPage('refleksi')">Langsung ke Refleksi ✧</button>
+  </div>
+</section>
+
+<section id="pendahuluan" class="panel hidden">
+  <div class="section-tag">01 • Pendahuluan</div>
+  <h2>Selamat Datang di Ruang Sastra!</h2>
+  <h3>♡ Kata Pengantar</h3>
+  <p>Puji syukur ke hadirat Tuhan Yang Maha Esa karena media pembelajaran interaktif berjudul <b>“Pengertian Novel”</b> ini dapat disusun sebagai sarana belajar Bahasa Indonesia. Media ini dirancang untuk membantu pembaca memahami pengertian novel berdasarkan beberapa sumber, membandingkan inti penjelasannya, dan menyusun pemahaman dengan kata-kata sendiri.</p>
+  <p>Materi disajikan secara ringkas dan dilengkapi kuis serta refleksi agar kegiatan belajar terasa lebih aktif. Semoga media ini bermanfaat dan membuat pembaca semakin tertarik untuk mengenal karya sastra.</p>
+  <div class="grid">
+    <div class="tile"><div class="number">🎯</div><h3>Tujuan Pembelajaran</h3><ul><li>Menjelaskan pengertian novel.</li><li>Mengenali inti definisi dari beberapa sumber.</li><li>Menyimpulkan pengertian novel dengan bahasa sendiri.</li><li>Mengevaluasi pemahaman melalui kuis dan refleksi.</li></ul></div>
+    <div class="tile"><div class="number">🧭</div><h3>Petunjuk Penggunaan</h3><ol><li>Gunakan menu navigasi di bagian atas.</li><li>Baca materi secara berurutan.</li><li>Kerjakan kuis tanpa melihat kunci lebih dahulu.</li><li>Isi refleksi dengan jujur sesuai pengalamanmu.</li></ol></div>
+    <div class="tile"><div class="number">💡</div><h3>Pertanyaan Pemantik</h3><p>Pernahkah kamu membaca cerita panjang yang membuatmu mengikuti perjalanan hidup tokohnya? Menurutmu, apa yang membuat cerita seperti itu disebut novel?</p></div>
+  </div>
+  <div class="actions"><button class="primary" onclick="showPage('materi')">Lanjut ke Materi →</button></div>
+</section>
+
+<section id="materi" class="panel hidden">
+  <div class="section-tag">02 • Isi Materi</div>
+  <h2>Apa Itu Novel?</h2>
+  <p>Sebelum menyimpulkan pengertian novel, mari kita membaca penjelasan dari beberapa sumber. Rumusan di bawah disampaikan dalam bentuk ringkasan atau parafrasa agar mudah dipahami.</p>
+  <div class="quote">
+    <h3>📘 1. Kamus Besar Bahasa Indonesia (KBBI)</h3>
+    <p>Novel adalah karangan prosa yang panjang, mengandung rangkaian cerita kehidupan seseorang dan orang-orang di sekelilingnya, serta menonjolkan watak dan sifat setiap pelaku.</p>
+    <span class="subtle">Fokus pengertian: cerita kehidupan dan watak para pelaku.</span>
+  </div>
+  <div class="quote pink">
+    <h3>📗 2. Encyclopaedia Britannica</h3>
+    <p>Novel merupakan karya naratif berbentuk prosa yang relatif panjang dan kompleks, yang menggambarkan pengalaman manusia melalui tokoh serta rangkaian peristiwa.</p>
+    <span class="subtle">Fokus pengertian: prosa naratif yang panjang dan menggambarkan pengalaman manusia.</span>
+  </div>
+  <div class="quote">
+    <h3>📙 3. Modul Belajar Mandiri Bahasa Indonesia — Kemendikbudristek</h3>
+    <p>Modul pembelajaran Bahasa Indonesia membahas novel sebagai salah satu karya sastra fiksi berbentuk prosa naratif. Ceritanya dibangun sebagai dunia imajinatif yang dapat terasa dekat dengan kehidupan nyata.</p>
+    <span class="subtle">Fokus pengertian: karya fiksi yang menyajikan dunia cerita melalui prosa naratif.</span>
+  </div>
+  <div class="quote pink">
+    <h3>📕 4. Burhan Nurgiyantoro</h3>
+    <p>Dalam <i>Teori Pengkajian Fiksi</i>, Nurgiyantoro menjelaskan novel sebagai karya fiksi yang menawarkan dunia imajinatif dan model kehidupan. Dunia cerita itu disusun melalui peristiwa, alur, tokoh, latar, dan unsur penceritaan lainnya. Penjelasan ini merupakan parafrasa, bukan kutipan langsung.</p>
+    <span class="subtle">Fokus pengertian: dunia rekaan yang menggambarkan model kehidupan.</span>
+  </div>
+  <div class="quote">
+    <h3>📘 5. Kosasih</h3>
+    <p>Kosasih memandang novel sebagai karya imajinatif yang mengisahkan persoalan kehidupan satu tokoh atau beberapa tokoh secara utuh. Artinya, novel memberi ruang untuk mengikuti pengalaman dan persoalan yang dialami tokoh di dalam cerita.</p>
+    <span class="subtle">Fokus pengertian: kisah imajinatif tentang persoalan kehidupan tokoh.</span>
+  </div>
+  <div class="quote pink">
+    <h3>📗 6. Panuti Sudjiman</h3>
+    <p>Dalam kamus istilah sastra, Sudjiman menjelaskan novel sebagai prosa rekaan yang panjang, menampilkan tokoh-tokoh serta serangkaian peristiwa dan latar yang disusun menjadi cerita.</p>
+    <span class="subtle">Fokus pengertian: prosa rekaan panjang dengan tokoh, peristiwa, dan latar.</span>
+  </div>
+  <div class="quote">
+    <h3>📙 7. Henry Guntur Tarigan</h3>
+    <p>Tarigan menjelaskan novel sebagai cerita dengan alur yang cukup panjang, umumnya dapat mengisi satu buku atau lebih, serta menggambarkan kehidupan tokoh secara imajinatif.</p>
+    <span class="subtle">Fokus pengertian: cerita panjang yang dikembangkan melalui alur dan tokoh.</span>
+  </div>
+  <div class="quote pink">
+    <h3>📚 8. M. H. Abrams — asal istilah</h3>
+    <p>Abrams, sebagaimana dibahas dalam kajian Nurgiyantoro, menerangkan bahwa istilah novel berkaitan dengan kata Italia <i>novella</i> dan kata Jerman <i>novelle</i>. Secara historis, istilah tersebut berkaitan dengan makna cerita baru atau cerita pendek berbentuk prosa; pemakaian modernnya berkembang menjadi bentuk fiksi prosa yang lebih panjang.</p>
+    <span class="subtle">Fokus pengertian: asal-usul istilah dan perkembangan makna novel.</span>
+  </div>
+  <h2 style="margin-top:28px">Membandingkan Inti Definisi</h2>
+  <div class="grid">
+    <div class="tile"><h3>📖 Bentuk karya</h3><p>Novel disampaikan dalam bentuk <b>prosa</b>, yaitu tulisan yang menggunakan susunan kalimat seperti bahasa sehari-hari, bukan pola bait dan baris seperti puisi.</p></div>
+    <div class="tile"><h3>🧑‍🤝‍🧑 Kehidupan tokoh</h3><p>Novel menyajikan tokoh dan pengalaman hidupnya. Pembaca mengikuti kejadian yang dialami tokoh dalam cerita.</p></div>
+    <div class="tile"><h3>🧵 Cerita yang berkembang</h3><p>Novel umumnya memberi ruang untuk mengembangkan peristiwa dan pengalaman tokoh secara lebih luas dan mendalam.</p></div>
+  </div>
+  <h2 style="margin-top:28px">Apa Persamaan dan Perbedaannya?</h2>
+  <p>KBBI menekankan cerita kehidupan dan watak tokoh. Britannica menjelaskan novel sebagai bentuk naratif prosa yang panjang dan kompleks. Nurgiyantoro menyoroti dunia fiksi atau imajinatif, sedangkan Kosasih menekankan persoalan kehidupan tokoh. Sudjiman dan Tarigan juga menyoroti bentuk prosa cerita yang panjang dengan tokoh serta rangkaian peristiwa.</p>
+  <div class="grid">
+    <div class="tile"><h3>Persamaan</h3><p>Novel merupakan karya berbentuk prosa yang menyampaikan cerita melalui tokoh dan peristiwa.</p></div>
+    <div class="tile"><h3>Perbedaan penekanan</h3><p>Setiap sumber memilih sudut penjelasan yang berbeda: panjang cerita, kehidupan tokoh, sifat fiksi, atau susunan peristiwa.</p></div>
+    <div class="tile"><h3>Fiksi bukan berarti tanpa makna</h3><p>Walaupun ceritanya rekaan, novel dapat terinspirasi oleh kenyataan dan menggambarkan pengalaman manusia.</p></div>
+  </div>
+  <div class="quote pink" style="margin-top:20px">
+    <h3>🌷 Rangkuman Materi</h3>
+    <ol>
+      <li>Novel adalah karya sastra berbentuk prosa naratif yang umumnya relatif panjang.</li>
+      <li>Novel biasanya bersifat fiksi atau imajinatif, meskipun dapat terinspirasi dari kehidupan nyata.</li>
+      <li>Cerita novel mengisahkan tokoh dan rangkaian peristiwa atau pengalaman yang dialaminya.</li>
+      <li>Tokoh, watak, dan persoalan kehidupan menjadi bagian penting dalam pemahaman novel.</li>
+      <li>Definisi para ahli memiliki penekanan berbeda, tetapi sama-sama memandang novel sebagai cerita prosa yang dikembangkan dengan cukup luas.</li>
+    </ol>
+    <h3>Kesimpulan Utama</h3>
+    <p><b>Novel adalah karya sastra fiksi berbentuk prosa yang menyajikan cerita relatif panjang tentang kehidupan tokoh melalui rangkaian peristiwa yang dikembangkan secara imajinatif.</b></p>
+  </div>
+  <div class="note"><b>Ingat!</b> Definisi di atas adalah ringkasan dengan kata-kata sendiri, bukan kutipan langsung dari para ahli. Jika mengutip untuk tugas akademik, periksa sumber asli dan tuliskan data bibliografinya dengan tepat.</div>
+  <div class="actions"><button class="primary" onclick="showPage('kuis')">Uji Pemahaman →</button></div>
+</section>
+
+<section id="kuis" class="panel hidden">
+  <div class="section-tag">03 • Evaluasi</div>
+  <h2>✨ Kuis Pemahaman</h2>
+  <p>Pilih satu jawaban paling tepat untuk setiap soal. Setelah selesai, tekan tombol <b>Periksa Jawaban</b> untuk melihat hasilmu.</p>
+  <div class="progress-wrap"><div id="quizProgress" class="progress"></div></div>
+  <form id="quiz">
+    <div class="question"><p><b>1. Novel termasuk karya sastra berbentuk …</b></p>
+      <label class="choice"><input type="radio" name="q1" value="a" required> Puisi berirama</label>
+      <label class="choice"><input type="radio" name="q1" value="b"> Prosa fiksi</label>
+      <label class="choice"><input type="radio" name="q1" value="c"> Petunjuk penggunaan</label>
+    </div>
+    <div class="question"><p><b>2. Menurut inti definisi yang dipelajari, novel umumnya menceritakan …</b></p>
+      <label class="choice"><input type="radio" name="q2" value="a" required> Kehidupan tokoh dan rangkaian peristiwa</label>
+      <label class="choice"><input type="radio" name="q2" value="b"> Daftar kata tanpa cerita</label>
+      <label class="choice"><input type="radio" name="q2" value="c"> Langkah memasang perangkat</label>
+    </div>
+    <div class="question"><p><b>3. Kata “prosa” pada pengertian novel mengacu pada karya yang …</b></p>
+      <label class="choice"><input type="radio" name="q3" value="a" required> Selalu ditulis dalam bait dan rima</label>
+      <label class="choice"><input type="radio" name="q3" value="b"> Disusun seperti tulisan atau tuturan biasa</label>
+      <label class="choice"><input type="radio" name="q3" value="c"> Hanya berisi angka</label>
+    </div>
+    <div class="question"><p><b>4. Hal yang menjadi kesamaan inti beberapa sumber tentang novel adalah …</b></p>
+      <label class="choice"><input type="radio" name="q4" value="a" required> Novel selalu menceritakan kejadian nyata</label>
+      <label class="choice"><input type="radio" name="q4" value="b"> Novel merupakan karya prosa naratif yang mengisahkan tokoh dan peristiwa</label>
+      <label class="choice"><input type="radio" name="q4" value="c"> Novel tidak memiliki cerita</label>
+    </div>
+    <div class="question"><p><b>5. Pernyataan yang paling tepat tentang cerita novel adalah …</b></p>
+      <label class="choice"><input type="radio" name="q5" value="a" required> Tokoh dan peristiwanya bisa berupa rekaan atau imajinasi</label>
+      <label class="choice"><input type="radio" name="q5" value="b"> Semua tokoh harus benar-benar ada</label>
+      <label class="choice"><input type="radio" name="q5" value="c"> Cerita novel tidak boleh menggambarkan pengalaman manusia</label>
+    </div>
+    <div class="actions"><button type="submit" class="primary">Periksa Jawaban</button><button type="reset" onclick="resetQuiz()">Ulangi Kuis</button></div>
+    <div id="quizResult" class="feedback" aria-live="polite"></div>
+  </form>
+  <div class="actions"><button onclick="showPage('refleksi')">Lanjut ke Refleksi →</button></div>
+</section>
+
+
+<section id="berlatih" class="panel hidden">
+  <div class="section-tag">04 • Simulasi Berlatih</div>
+  <h2>✍️ Latihan dengan Soal Beragam</h2>
+  <p>Bagian ini melengkapi kuis sebelumnya dengan variasi soal: pilihan ganda, benar-salah, isian singkat, dan penerapan konsep. Jawaban diperiksa otomatis dengan pembahasan.</p>
+  <div class="progress-wrap"><div id="practiceProgress" class="progress"></div></div>
+  <form id="practiceForm">
+    <div class="question" data-answer="b" data-kind="radio"><p><b>1. Pilihan ganda — Manakah pengertian novel yang paling tepat?</b></p>
+      <label class="choice"><input type="radio" name="p1" value="a"> Karya tulis yang selalu berisi petunjuk melakukan sesuatu.</label>
+      <label class="choice"><input type="radio" name="p1" value="b"> Karya sastra berbentuk prosa yang mengembangkan cerita kehidupan tokoh dan rangkaian peristiwa.</label>
+      <label class="choice"><input type="radio" name="p1" value="c"> Karya sastra yang seluruh isinya harus berupa dialog panggung.</label>
+      <label class="choice"><input type="radio" name="p1" value="d"> Tulisan singkat yang hanya menyampaikan berita faktual.</label><div class="feedback"></div></div>
+    <div class="question" data-answer="a" data-kind="radio"><p><b>2. Pilihan ganda — Novel termasuk karya sastra berbentuk ....</b></p>
+      <label class="choice"><input type="radio" name="p2" value="a"> Prosa</label><label class="choice"><input type="radio" name="p2" value="b"> Rumus</label><label class="choice"><input type="radio" name="p2" value="c"> Laporan percobaan</label><label class="choice"><input type="radio" name="p2" value="d"> Daftar instruksi</label><div class="feedback"></div></div>
+    <div class="question" data-answer="true" data-kind="radio"><p><b>3. Benar atau salah — Novel dapat menceritakan kisah rekaan yang terinspirasi dari kehidupan nyata.</b></p>
+      <label class="choice"><input type="radio" name="p3" value="true"> Benar</label><label class="choice"><input type="radio" name="p3" value="false"> Salah</label><div class="feedback"></div></div>
+    <div class="question" data-answer="false" data-kind="radio"><p><b>4. Benar atau salah — Novel harus selalu menceritakan kejadian nyata persis seperti laporan sejarah.</b></p>
+      <label class="choice"><input type="radio" name="p4" value="true"> Benar</label><label class="choice"><input type="radio" name="p4" value="false"> Salah</label><div class="feedback"></div></div>
+    <div class="question" data-answer="prosa" data-kind="text"><p><b>5. Isian singkat — Novel merupakan karya sastra berbentuk ....</b></p><input type="text" name="p5" placeholder="Tulis satu kata"><div class="feedback"></div></div>
+    <div class="question" data-answer="tokoh" data-kind="text"><p><b>6. Isian singkat — Orang atau sosok yang mengalami peristiwa dalam cerita disebut ....</b></p><input type="text" name="p6" placeholder="Tulis jawabanmu"><div class="feedback"></div></div>
+    <div class="question" data-answer="c" data-kind="radio"><p><b>7. Penerapan — Rani membaca buku yang mengisahkan perjalanan seorang anak melalui banyak kejadian yang saling berhubungan. Buku itu disusun sebagai kisah panjang berbentuk prosa. Karya tersebut paling sesuai disebut ....</b></p>
+      <label class="choice"><input type="radio" name="p7" value="a"> Poster informasi</label><label class="choice"><input type="radio" name="p7" value="b"> Daftar belanja</label><label class="choice"><input type="radio" name="p7" value="c"> Novel</label><label class="choice"><input type="radio" name="p7" value="d"> Petunjuk penggunaan</label><div class="feedback"></div></div>
+    <div class="question" data-answer="a" data-kind="radio"><p><b>8. Memahami konsep — Bagian yang paling sesuai dengan pengertian novel adalah ....</b></p>
+      <label class="choice"><input type="radio" name="p8" value="a"> Rangkaian cerita yang dikembangkan melalui tokoh dan peristiwa</label><label class="choice"><input type="radio" name="p8" value="b"> Kumpulan angka tanpa penjelasan</label><label class="choice"><input type="radio" name="p8" value="c"> Instruksi yang wajib dilakukan berurutan</label><label class="choice"><input type="radio" name="p8" value="d"> Tabel data yang tidak membentuk kisah</label><div class="feedback"></div></div>
+    <div class="question" data-answer="b" data-kind="radio"><p><b>9. Menurut KBBI, salah satu hal yang ditonjolkan dalam novel adalah ....</b></p><label class="choice"><input type="radio" name="p9" value="a"> Rumus dan angka</label><label class="choice"><input type="radio" name="p9" value="b"> Watak dan sifat pelaku</label><label class="choice"><input type="radio" name="p9" value="c"> Petunjuk merakit benda</label><div class="feedback"></div></div>
+    <div class="question" data-answer="a" data-kind="radio"><p><b>10. Istilah “fiksi” dalam pembahasan novel paling dekat artinya dengan ....</b></p><label class="choice"><input type="radio" name="p10" value="a"> Cerita rekaan atau imajinatif</label><label class="choice"><input type="radio" name="p10" value="b"> Catatan angka pasti</label><label class="choice"><input type="radio" name="p10" value="c"> Petunjuk resmi</label><div class="feedback"></div></div>
+    <div class="question" data-answer="c" data-kind="radio"><p><b>11. Tokoh dan peristiwa dalam novel disampaikan melalui ....</b></p><label class="choice"><input type="radio" name="p11" value="a"> Daftar belanja</label><label class="choice"><input type="radio" name="p11" value="b"> Tabel perkalian</label><label class="choice"><input type="radio" name="p11" value="c"> Rangkaian cerita</label><div class="feedback"></div></div>
+    <div class="question" data-answer="b" data-kind="radio"><p><b>12. Pernyataan yang tepat mengenai inspirasi cerita novel adalah ....</b></p><label class="choice"><input type="radio" name="p12" value="a"> Tidak boleh terinspirasi dari kehidupan nyata</label><label class="choice"><input type="radio" name="p12" value="b"> Dapat berasal dari imajinasi atau terinspirasi dari kehidupan nyata</label><label class="choice"><input type="radio" name="p12" value="c"> Harus sama persis dengan laporan berita</label><div class="feedback"></div></div>
+    <div class="question" data-answer="a" data-kind="radio"><p><b>13. Apa arti “prosa” dalam pengertian novel?</b></p><label class="choice"><input type="radio" name="p13" value="a"> Bentuk tulisan yang tidak terikat pola bait dan rima seperti puisi</label><label class="choice"><input type="radio" name="p13" value="b"> Tulisan yang hanya berupa gambar</label><label class="choice"><input type="radio" name="p13" value="c"> Kumpulan kata yang selalu berima</label><div class="feedback"></div></div>
+    <div class="question" data-answer="c" data-kind="radio"><p><b>14. Pendapat Nurgiyantoro tentang novel menekankan adanya ....</b></p><label class="choice"><input type="radio" name="p14" value="a"> Daftar fakta tanpa tokoh</label><label class="choice"><input type="radio" name="p14" value="b"> Rumus ilmiah</label><label class="choice"><input type="radio" name="p14" value="c"> Dunia imajinatif atau dunia fiksi</label><div class="feedback"></div></div>
+    <div class="question" data-answer="b" data-kind="radio"><p><b>15. Berdasarkan ringkasan pendapat Kosasih, novel mengisahkan ....</b></p><label class="choice"><input type="radio" name="p15" value="a"> Langkah-langkah membuat barang</label><label class="choice"><input type="radio" name="p15" value="b"> Persoalan kehidupan satu atau beberapa tokoh</label><label class="choice"><input type="radio" name="p15" value="c"> Data tanpa alur</label><div class="feedback"></div></div>
+    <div class="question" data-answer="a" data-kind="radio"><p><b>16. Apa yang dapat disimpulkan dari beberapa definisi ahli?</b></p><label class="choice"><input type="radio" name="p16" value="a"> Novel adalah prosa cerita yang dikembangkan melalui tokoh dan peristiwa</label><label class="choice"><input type="radio" name="p16" value="b"> Semua ahli memberi definisi dengan kata-kata persis sama</label><label class="choice"><input type="radio" name="p16" value="c"> Novel tidak termasuk karya sastra</label><div class="feedback"></div></div>
+    <div class="question" data-answer="c" data-kind="radio"><p><b>17. Manakah contoh yang paling sesuai dengan pengertian novel?</b></p><label class="choice"><input type="radio" name="p17" value="a"> Daftar jadwal pelajaran</label><label class="choice"><input type="radio" name="p17" value="b"> Petunjuk penggunaan kipas</label><label class="choice"><input type="radio" name="p17" value="c"> Buku cerita tentang perjalanan hidup seorang tokoh dengan banyak peristiwa</label><div class="feedback"></div></div>
+    <div class="question" data-answer="b" data-kind="radio"><p><b>18. Apakah semua tokoh novel harus merupakan orang yang benar-benar ada?</b></p><label class="choice"><input type="radio" name="p18" value="a"> Ya, semuanya harus nyata</label><label class="choice"><input type="radio" name="p18" value="b"> Tidak, tokoh dapat diciptakan melalui imajinasi</label><label class="choice"><input type="radio" name="p18" value="c"> Ya, asalkan namanya panjang</label><div class="feedback"></div></div>
+    <div class="question" data-answer="a" data-kind="radio"><p><b>19. Mengapa novel dapat terasa dekat dengan kehidupan pembaca?</b></p><label class="choice"><input type="radio" name="p19" value="a"> Karena ceritanya dapat menggambarkan pengalaman dan persoalan manusia</label><label class="choice"><input type="radio" name="p19" value="b"> Karena selalu memuat data statistik</label><label class="choice"><input type="radio" name="p19" value="c"> Karena tidak memiliki tokoh</label><div class="feedback"></div></div>
+    <div class="question" data-answer="c" data-kind="radio"><p><b>20. Pernyataan rangkuman yang paling lengkap adalah ....</b></p><label class="choice"><input type="radio" name="p20" value="a"> Novel adalah tulisan singkat yang selalu berisi fakta</label><label class="choice"><input type="radio" name="p20" value="b"> Novel adalah kumpulan puisi dengan rima</label><label class="choice"><input type="radio" name="p20" value="c"> Novel adalah karya prosa fiksi relatif panjang yang menceritakan tokoh melalui rangkaian peristiwa</label><div class="feedback"></div></div>
+    <div class="actions"><button type="button" class="primary" onclick="checkPractice()">Periksa Jawaban</button><button type="reset" onclick="resetPractice()">Ulangi Latihan</button></div>
+    <p id="practiceScore" class="feedback" aria-live="polite"></p>
+  </form>
+  <div class="actions"><button class="primary" onclick="showPage('bermain')">Lanjut ke Permainan →</button></div>
+</section>
+
+
+<section id="rekap" class="panel hidden">
+  <div class="section-tag">05 • Rekap Nilai Peserta</div>
+  <h2>📊 Kirim Nilai ke Pembuat MPI</h2>
+  <p>Isi nama dan kelas setelah menyelesaikan <b>Kuis Pemahaman (5 soal)</b> dan <b>Latihan Beragam (20 soal)</b>. Hasil akhir dihitung dari 25 soal, lalu dapat dikirim ke Google Sheets pembuat media.</p>
+  <div class="note"><b>Penting:</b> Fitur online baru berfungsi setelah pembuat MPI memasang URL Google Apps Script pada kode HTML. Jika URL belum dipasang, hasil tidak akan terkirim secara online.</div>
+  <div class="grid">
+    <div class="tile"><h3>Kuis Pemahaman</h3><p id="quizSummary">Belum dikerjakan</p></div>
+    <div class="tile"><h3>Latihan Beragam</h3><p id="practiceSummary">Belum dikerjakan</p></div>
+  </div>
+  <form id="scoreSubmission">
+    <label class="field" for="scoreName">Nama lengkap *</label>
+    <input id="scoreName" type="text" maxlength="80" required placeholder="Tulis nama kamu">
+    <label class="field" for="scoreClass">Kelas *</label>
+    <input id="scoreClass" type="text" maxlength="40" required placeholder="Contoh: XI-I">
+    <div class="tile" style="margin-top:14px"><p><b>Hasil akhir</b></p><p id="finalScorePreview">Selesaikan kuis dan latihan untuk melihat hasil akhir.</p><p class="subtle">Nilai = jumlah benar ÷ 25 × 100. Permainan kata dan refleksi tidak dihitung dalam nilai akademik.</p></div>
+    <div class="actions"><button type="submit" class="primary">Kirim Nilai Online ↑</button></div>
+    <p id="submissionStatus" class="feedback" aria-live="polite"></p>
+  </form>
+  <div class="quote pink"><b>Privasi:</b> Yang dikirim hanya nama, kelas, jumlah benar/salah, nilai akhir, skor per bagian, dan waktu pengiriman. Jawaban per soal serta jawaban refleksi tidak dikirim.</div>
+</section>
+
+<section id="bermain" class="panel hidden">
+  <div class="section-tag">05 • Simulasi Bermain</div>
+  <h2>🎮 Acak Kata: Tebak Istilah</h2>
+  <p>Tebak kata yang berhubungan dengan pengertian novel berdasarkan petunjuknya. Setiap jawaban benar bernilai 10 poin.</p>
+  <div class="tile" style="max-width:650px;margin:0 auto;text-align:center">
+    <p id="gameCount" class="subtle">Kata 1 dari 5</p><div id="scrambled" style="font-size:2rem;letter-spacing:.18em;font-weight:900;color:var(--blue-deep);background:var(--blue-pale);border-radius:16px;padding:14px">ASPRO</div>
+    <p id="gameClue">Bentuk tulisan yang menjadi bentuk karya novel.</p>
+    <label class="field" for="gameAnswer">Jawabanmu</label><input id="gameAnswer" type="text" placeholder="Ketik kata yang benar">
+    <div class="actions"><button class="primary" type="button" onclick="checkGame()">Cek Kata</button><button type="button" onclick="nextGame()">Soal Berikutnya →</button><button class="softpink" type="button" onclick="restartGame()">Mulai Ulang</button></div>
+    <p id="gameFeedback" class="feedback" aria-live="polite"></p><p class="score" style="font-weight:850;color:var(--blue-deep)">Skor permainan: <span id="gameScore">0</span></p>
+  </div>
+  <div class="quote pink"><b>Tips:</b> Baca petunjuknya, ingat materi, lalu susun hurufnya menjadi kata yang tepat.</div>
+  <div class="actions"><button class="primary" onclick="showPage('refleksi')">Lanjut ke Refleksi →</button></div>
+</section>
+
+<section id="refleksi" class="panel hidden">
+  <div class="section-tag">06 • Refleksi Diri</div>
+  <h2>🩷 My Learning Reflection</h2>
+  <p>Luangkan waktu sebentar untuk melihat kembali pengalaman belajarmu. Tidak ada jawaban benar atau salah dalam refleksi ini. Pilih dan tulis jawaban sesuai pendapatmu.</p>
+  <div class="note">♡ Refleksi ini diproses di browser perangkatmu. Saat menekan tombol unduh, jawaban akan dibuat menjadi file teks dan tidak dikirim ke server.</div>
+  <form id="reflection">
+    <label class="field" for="nama">Nama (opsional)</label><input type="text" id="nama" placeholder="Tulis nama kamu di sini">
+    <label class="field" for="kelas">Kelas (opsional)</label><input type="text" id="kelas" placeholder="Contoh: XI-I">
+    <div class="ref-card">
+      <div class="small-label">01 • PERASAAN BELAJAR</div>
+      <label class="field" for="mood">Bagaimana perasaanmu setelah mempelajari materi ini?</label>
+      <select id="mood" required><option value="">Pilih yang paling sesuai</option><option>😍 Senang dan tertarik</option><option>😊 Senang karena mulai paham</option><option>😐 Biasa saja</option><option>🤔 Masih bingung, ingin belajar lagi</option></select>
+    </div>
+    <div class="ref-card">
+      <div class="small-label">02 • TINGKAT PEMAHAMAN</div>
+      <label class="field">Seberapa paham kamu tentang pengertian novel?</label>
+      <div class="scale">
+        <label><input type="radio" name="level" value="1" required>1<br><span>Belum paham</span></label>
+        <label><input type="radio" name="level" value="2">2<br><span>Mulai paham</span></label>
+        <label><input type="radio" name="level" value="3">3<br><span>Cukup paham</span></label>
+        <label><input type="radio" name="level" value="4">4<br><span>Paham</span></label>
+        <label><input type="radio" name="level" value="5">5<br><span>Sangat paham</span></label>
+      </div>
+    </div>
+    <div class="ref-card">
+      <div class="small-label">03 • BAGIAN FAVORIT</div>
+      <label class="field">Bagian mana yang paling membantumu memahami pengertian novel?</label>
+      <label class="choice"><input type="radio" name="favorite" value="Definisi menurut KBBI" required> Definisi menurut KBBI</label>
+      <label class="choice"><input type="radio" name="favorite" value="Definisi menurut Britannica"> Definisi menurut Britannica</label>
+      <label class="choice"><input type="radio" name="favorite" value="Definisi dari modul pembelajaran"> Definisi dari modul pembelajaran</label>
+      <label class="choice"><input type="radio" name="favorite" value="Perbandingan dan kesimpulan"> Perbandingan dan kesimpulan</label>
+      <label class="choice"><input type="radio" name="favorite" value="Definisi menurut Nurgiyantoro"> Definisi menurut Nurgiyantoro</label>
+      <label class="choice"><input type="radio" name="favorite" value="Definisi menurut Kosasih"> Definisi menurut Kosasih</label>
+      <label class="choice"><input type="radio" name="favorite" value="Perbandingan dan rangkuman"> Perbandingan dan rangkuman</label>
+      <label class="choice"><input type="radio" name="favorite" value="Latihan soal"> Latihan soal</label>
+      <label class="choice"><input type="radio" name="favorite" value="Permainan acak kata"> Permainan acak kata</label>
+    </div>
+    <div class="ref-card">
+      <div class="small-label">04 • APA YANG KAMU PAHAMI?</div>
+      <label class="field" for="ownDefinition">Tuliskan pengertian novel dengan kata-katamu sendiri.</label>
+      <textarea id="ownDefinition" required placeholder="Menurut saya, novel adalah ..."></textarea>
+      <label class="field" for="newThing">Hal baru apa yang kamu pelajari dari materi ini?</label>
+      <textarea id="newThing" required placeholder="Hari ini saya belajar bahwa ..."></textarea>
+      <label class="field" for="sourceCompare">Menurutmu, apa persamaan pengertian novel dari beberapa sumber dan ahli?</label>
+      <textarea id="sourceCompare" placeholder="Persamaannya adalah ..."></textarea>
+      <label class="field" for="exampleNovel">Coba jelaskan contoh cerita yang menurutmu dapat disebut novel dan alasannya.</label>
+      <textarea id="exampleNovel" placeholder="Contohnya ... karena ..."></textarea>
+      <label class="field" for="useful">Bagian materi apa yang paling berguna untukmu? Mengapa?</label>
+      <textarea id="useful" placeholder="Bagian yang paling berguna adalah ... karena ..."></textarea>
+    </div>
+    <div class="ref-card">
+      <div class="small-label">05 • EVALUASI DIRI</div>
+      <label class="field" for="confidence">Seberapa yakin kamu bisa menjelaskan pengertian novel kepada teman?</label>
+      <select id="confidence"><option value="">Pilih jawaban</option><option>Sangat yakin</option><option>Yakin</option><option>Masih perlu latihan</option><option>Belum yakin dan ingin belajar lagi</option></select>
+      <label class="field" for="nextGoal">Apa target kecilmu setelah menyelesaikan media ini?</label>
+      <textarea id="nextGoal" placeholder="Target saya selanjutnya adalah ..."></textarea>
+    </div>
+    <div class="ref-card">
+      <div class="small-label">06 • TANTANGAN BELAJAR</div>
+      <label class="field" for="difficulty">Apakah ada bagian yang masih membingungkan? Jika ada, jelaskan.</label>
+      <textarea id="difficulty" placeholder="Bagian yang masih membuat saya bingung adalah ..."></textarea>
+      <label class="field" for="strategy">Apa yang akan kamu lakukan agar lebih memahami materi?</label>
+      <select id="strategy"><option value="">Pilih rencana (opsional)</option><option>Membaca materi sekali lagi</option><option>Mencari contoh novel dan membacanya</option><option>Bertanya kepada guru atau teman</option><option>Mencatat kesimpulan dengan kata sendiri</option><option>Saya sudah cukup memahami materi</option></select>
+    </div>
+    <div class="ref-card">
+      <div class="small-label">07 • KREATIVITAS & SARAN</div>
+      <label class="field" for="rating">Bagaimana pendapatmu tentang tampilan media ini?</label>
+      <select id="rating"><option value="">Pilih pendapat (opsional)</option><option>Sangat menarik</option><option>Menarik</option><option>Cukup menarik</option><option>Perlu dibuat lebih menarik</option></select>
+      <label class="field" for="suggestion">Apa saranmu agar media pembelajaran ini lebih baik?</label>
+      <textarea id="suggestion" placeholder="Menurut saya, media ini akan lebih baik jika ..."></textarea>
+      <label class="field" for="message">Tulis satu kalimat penyemangat untuk dirimu setelah belajar.</label>
+      <textarea id="message" placeholder="Contoh: Aku bisa memahami materi jika terus berusaha!"></textarea>
+    </div>
+    <div class="actions"><button type="submit" class="primary">Simpan Refleksi sebagai File ↓</button><button type="reset" class="softpink" onclick="document.getElementById('refResult').textContent=''">Kosongkan Jawaban</button></div>
+    <p id="refResult" class="feedback" aria-live="polite"></p>
+  </form>
+</section>
+
+<section class="panel sources">
+  <div class="section-tag">07 • Referensi</div>
+  <h2>🔎 Daftar Pustaka</h2>
+  <ol>
+    <li><b>Kamus Besar Bahasa Indonesia (KBBI)</b>, entri “novel”. <a href="https://kbbi.web.id/novel" target="_blank" rel="noopener">Baca entri novel</a>. <span class="subtle">Catatan: kbbi.web.id merupakan situs KBBI daring nonresmi.</span></li>
+    <li><b>Encyclopaedia Britannica.</b> “Novel | literature.” <a href="https://www.britannica.com/art/novel" target="_blank" rel="noopener">Baca artikel Britannica</a>.</li>
+    <li><b>Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi.</b> (2021). <i>Modul Belajar Mandiri Bahasa Indonesia.</i> <a href="https://repositori.kemendikdasmen.go.id/22711/1/MODUL%20BELAJAR%20MANDIRI_B.INDONESIA_2021.pdf" target="_blank" rel="noopener">Buka modul PDF</a>.</li>
+    <li><b>Nurgiyantoro, Burhan.</b> <i>Teori Pengkajian Fiksi.</i> Rujukan untuk penjelasan novel sebagai karya fiksi dan dunia imajinatif. <a href="https://elibrary.unikom.ac.id/id/eprint/3953/8/UNIKOM_Praditya%20Tri%20S_BAB%20II.pdf" target="_blank" rel="noopener">Baca kajian yang merujuk Nurgiyantoro</a>.</li>
+    <li><b>Kosasih, E.</b> (2012). Pembahasan pengertian novel sebagai karya imajinatif tentang persoalan kehidupan tokoh, sebagaimana dirujuk dalam kajian sastra. <a href="https://elibrary.unikom.ac.id/id/eprint/3953/8/UNIKOM_Praditya%20Tri%20S_BAB%20II.pdf" target="_blank" rel="noopener">Baca kajian yang merujuk Kosasih</a>.</li>
+    <li><b>Sudjiman, Panuti.</b> (1984). <i>Kamus Istilah Sastra.</i> Rujukan definisi novel sebagai prosa rekaan panjang, sebagaimana diringkas dalam sumber sekunder. <a href="https://www.kajianpustaka.com/2018/04/pengertian-ciri-dan-unsur-unsur-novel.html" target="_blank" rel="noopener">Baca ringkasan sumber sekunder</a>.</li>
+    <li><b>Tarigan, Henry Guntur.</b> Pembahasan definisi novel sebagai cerita beralur cukup panjang, sebagaimana dirujuk dalam sumber pembelajaran. <a href="https://www.inews.id/news/nasional/pengertian-novel-struktur-unsur-dan-kaidah-kebahasaannya/2" target="_blank" rel="noopener">Baca ringkasan definisi ahli</a>.</li>
+  </ol>
+  <p class="subtle">Definisi dari sumber disampaikan dalam bentuk ringkasan/parafrasa untuk keperluan pembelajaran. Periksa sumber asli jika membutuhkan kutipan akademik secara langsung.</p>
+  <div class="quote pink"><b>Terima kasih sudah belajar! ♡</b><br>Semoga kamu semakin memahami pengertian novel dan semakin semangat belajar Bahasa Indonesia.</div>
+</section>
+</main>
+<div class="footer">✦ RUANG SASTRA • Blue skies, pink pages, endless stories ♡</div>
+<script>
+const pageIds=['pendahuluan','materi','kuis','berlatih','rekap','bermain','refleksi'];
+// Tempel URL Web App Google Apps Script di bawah ini setelah deployment.
+const GOOGLE_SHEETS_WEB_APP_URL = 'TEMPEL_URL_WEB_APP_DI_SINI';
+let quizResultScore = null;
+let practiceResultScore = null;
+function updateScorePreview(){
+  const qs=document.getElementById('quizSummary'), ps=document.getElementById('practiceSummary'), fp=document.getElementById('finalScorePreview');
+  qs.textContent=quizResultScore===null?'Belum dikerjakan':quizResultScore+' dari 5 benar, '+(5-quizResultScore)+' salah.';
+  ps.textContent=practiceResultScore===null?'Belum dikerjakan':practiceResultScore+' dari 20 benar, '+(20-practiceResultScore)+' salah.';
+  if(quizResultScore===null||practiceResultScore===null){fp.textContent='Selesaikan kuis dan latihan untuk melihat hasil akhir.';return;}
+  const correct=quizResultScore+practiceResultScore, wrong=25-correct;
+  fp.textContent=correct+'/25 benar • '+wrong+' salah • Nilai '+Math.round(correct/25*100)+'/100.';
+}
+function showPage(id){
+  pageIds.forEach(s=>document.getElementById(s).classList.toggle('hidden',s!==id));
+  if(id==='home'){pageIds.forEach(s=>document.getElementById(s).classList.add('hidden'));window.scrollTo({top:0,behavior:'smooth'});return;}
+  document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+}
+function resetQuiz(){document.getElementById('quizResult').textContent='';document.getElementById('quizProgress').style.width='0%';}
+document.getElementById('quiz').addEventListener('change',function(){
+  const total=5;let answered=0;for(let i=1;i<=total;i++)if(this.querySelector('input[name="q'+i+'"]:checked'))answered++;
+  document.getElementById('quizProgress').style.width=(answered/total*100)+'%';
+});
+document.getElementById('quiz').addEventListener('submit',function(e){
+  e.preventDefault();const answers={q1:'b',q2:'a',q3:'b',q4:'b',q5:'a'};const fd=new FormData(this);let score=0;
+  Object.keys(answers).forEach(k=>{if(fd.get(k)===answers[k])score++});
+  quizResultScore=score;updateScorePreview();
+  let message=score===5?'Luar biasa! Semua jawabanmu benar: 5/5. Kamu sudah memahami inti materi! 🎉':score>=3?`Bagus! Nilaimu ${score}/5. Coba baca kembali bagian yang belum kamu kuasai, lalu ulangi kuis.`:`Nilaimu ${score}/5. Tidak apa-apa! Baca kembali materi dan coba lagi. Kamu pasti bisa. ♡`;
+  document.getElementById('quizResult').textContent=message;
+});
+
+const practiceExplanations={
+ p1:'Novel adalah karya sastra prosa yang mengembangkan cerita melalui tokoh dan peristiwa.',p2:'Novel termasuk prosa, yaitu karya tulis yang tidak terikat pola bait dan rima seperti puisi.',p3:'Cerita novel dapat berupa rekaan dan penulis dapat mengambil inspirasi dari kehidupan nyata.',p4:'Novel tidak harus berupa laporan kejadian nyata; kisahnya dapat bersifat rekaan.',p5:'Kata kuncinya adalah prosa.',p6:'Tokoh adalah sosok yang terlibat atau mengalami peristiwa dalam cerita.',p7:'Cerita panjang berbentuk prosa dengan tokoh dan peristiwa yang saling berkaitan sesuai dengan pengertian novel.',p8:'Novel mengembangkan cerita melalui tokoh dan rangkaian peristiwa.',p9:'KBBI menekankan watak dan sifat para pelaku dalam cerita novel.',p10:'Fiksi berarti cerita rekaan atau imajinatif.',p11:'Tokoh dan peristiwa menjadi bagian dari rangkaian cerita.',p12:'Novel dapat berasal dari imajinasi dan bisa pula terinspirasi dari kenyataan.',p13:'Prosa tidak terikat pola bait dan rima seperti puisi.',p14:'Nurgiyantoro menyoroti dunia imajinatif yang dibangun dalam karya fiksi.',p15:'Kosasih menekankan persoalan kehidupan yang dialami tokoh.',p16:'Para ahli memakai penekanan yang beragam, tetapi novel tetap dipahami sebagai prosa cerita.',p17:'Buku yang mengembangkan perjalanan hidup tokoh melalui peristiwa merupakan contoh yang sesuai.',p18:'Tokoh novel bisa merupakan tokoh rekaan.',p19:'Pengalaman dan persoalan manusia dalam novel dapat terasa dekat dengan kehidupan pembaca.',p20:'Rangkuman yang tepat memuat bentuk prosa fiksi, cerita relatif panjang, tokoh, dan rangkaian peristiwa.'
+};
+function checkPractice(){let score=0,answered=0;const questions=[...document.querySelectorAll('#practiceForm .question')];questions.forEach((q,i)=>{const name='p'+(i+1),kind=q.dataset.kind,answer=q.dataset.answer;let val='';if(kind==='radio'){const selected=q.querySelector('input[name="'+name+'"]:checked');if(selected)val=selected.value}else val=(q.querySelector('input[type="text"]').value||'').trim().toLowerCase();const correct=val===answer;const fb=q.querySelector('.feedback');if(val)answered++;if(correct){score++;fb.className='feedback';fb.style.color='#24734a';fb.textContent='✓ Tepat! '+practiceExplanations[name]}else{fb.className='feedback';fb.style.color='#b33d5c';fb.textContent=(val?'Belum tepat. ':'Belum dijawab. ')+practiceExplanations[name]}});document.getElementById('practiceScore').textContent='Hasil latihan: '+score+'/'+questions.length+' benar ('+Math.round(score/questions.length*100)+'%). Terus berlatih ya!';document.getElementById('practiceProgress').style.width=(answered/questions.length*100)+'%';practiceResultScore=score;updateScorePreview();}
+function resetPractice(){setTimeout(()=>{document.querySelectorAll('#practiceForm .feedback').forEach(f=>{f.textContent='';f.removeAttribute('style')});document.getElementById('practiceScore').textContent='';document.getElementById('practiceProgress').style.width='0%'},0)}
+const games=[{word:'PROSA',scramble:'ASPRO',clue:'Bentuk tulisan yang menjadi bentuk karya novel.'},{word:'TOKOH',scramble:'HOKOT',clue:'Sosok yang mengalami atau terlibat dalam peristiwa cerita.'},{word:'CERITA',scramble:'TACIRE',clue:'Kisah atau rangkaian peristiwa yang disampaikan dalam novel.'},{word:'KARYA',scramble:'YAKRA',clue:'Novel merupakan salah satu ... sastra.'},{word:'SASTRA',scramble:'TARSAS',clue:'Novel termasuk jenis karya ...'},{word:'FIKSI',scramble:'KISFI',clue:'Cerita rekaan atau imajinatif disebut ...'},{word:'WATAK',scramble:'TAWAK',clue:'Sifat atau karakter yang ditonjolkan dari pelaku cerita.'},{word:'ALUR',scramble:'RULA',clue:'Rangkaian kejadian dalam sebuah cerita disebut ...'},{word:'TOKOH',scramble:'KOTHO',clue:'Orang atau sosok dalam cerita.'},{word:'IMAJINASI',scramble:'GAMINASII',clue:'Daya membayangkan atau menciptakan sesuatu dalam pikiran.'},{word:'PERISTIWA',scramble:'TIRWAPESI',clue:'Kejadian yang dialami tokoh dalam cerita.'},{word:'NOVEL',scramble:'VELON',clue:'Karya prosa fiksi yang sedang kita pelajari.'}];let gameIndex=0,gameScore=0,gameSolved=false;
+function renderGame(){const g=games[gameIndex];document.getElementById('gameCount').textContent='Kata '+(gameIndex+1)+' dari '+games.length;document.getElementById('scrambled').textContent=g.scramble;document.getElementById('gameClue').textContent=g.clue;document.getElementById('gameAnswer').value='';document.getElementById('gameFeedback').textContent='';gameSolved=false}
+function checkGame(){if(gameSolved){document.getElementById('gameFeedback').textContent='Kata ini sudah dijawab. Lanjut ke soal berikutnya ya!';return}const val=document.getElementById('gameAnswer').value.trim().toUpperCase(),g=games[gameIndex],fb=document.getElementById('gameFeedback');if(val===g.word){gameScore+=10;document.getElementById('gameScore').textContent=gameScore;fb.style.color='#24734a';fb.textContent='✓ Benar! Kamu mendapat 10 poin.';gameSolved=true}else{fb.style.color='#b33d5c';fb.textContent='Belum tepat, coba susun hurufnya lagi.'}}
+function nextGame(){if(gameIndex<games.length-1){gameIndex++;renderGame()}else{document.getElementById('gameFeedback').style.color='var(--blue-deep)';document.getElementById('gameFeedback').textContent='Permainan selesai! Skor akhir kamu '+gameScore+' poin. Tekan Mulai Ulang untuk bermain lagi.'}}
+function restartGame(){gameIndex=0;gameScore=0;document.getElementById('gameScore').textContent='0';renderGame()}
+renderGame();
+
+document.getElementById('scoreSubmission').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const status=document.getElementById('submissionStatus');
+  if(quizResultScore===null||practiceResultScore===null){status.textContent='Selesaikan Kuis Pemahaman dan Latihan Beragam terlebih dahulu, lalu buka Rekap Nilai.';return;}
+  if(!GOOGLE_SHEETS_WEB_APP_URL.startsWith('https://script.google.com/macros/s/')||GOOGLE_SHEETS_WEB_APP_URL.includes('TEMPEL_URL')){
+    status.textContent='URL Google Sheets belum dipasang. Minta pembuat MPI memasukkan URL Web App ke konstanta GOOGLE_SHEETS_WEB_APP_URL pada file HTML.';return;
+  }
+  const correct=quizResultScore+practiceResultScore;
+  const payload={name:document.getElementById('scoreName').value.trim(),className:document.getElementById('scoreClass').value.trim(),quizCorrect:quizResultScore,quizWrong:5-quizResultScore,practiceCorrect:practiceResultScore,practiceWrong:20-practiceResultScore,totalCorrect:correct,totalWrong:25-correct,score:Math.round(correct/25*100),totalQuestions:25,submittedAt:new Date().toISOString(),source:'MPI Pengertian Novel'};
+  if(!payload.name||!payload.className){status.textContent='Nama dan kelas wajib diisi.';return;}
+  status.textContent='Mengirim hasil…';
+  try{
+    await fetch(GOOGLE_SHEETS_WEB_APP_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
+    status.textContent='Permintaan pengiriman sudah dikirim dari perangkat ini. Karena koneksi Google Apps Script tidak memberikan konfirmasi yang bisa dibaca halaman ini, minta pembuat MPI memeriksa Google Sheets untuk memastikan baris nilai masuk.';
+  }catch(err){status.textContent='Pengiriman gagal karena koneksi. Periksa internet dan URL Web App, lalu coba lagi.';}
+});
+
+document.getElementById('reflection').addEventListener('submit',function(e){
+  e.preventDefault();const fd=new FormData(this);
+  const text=`REFLEKSI PEMBELAJARAN — PENGERTIAN NOVEL\n\nNama: ${document.getElementById('nama').value||'Tidak diisi'}\nKelas: ${document.getElementById('kelas').value||'Tidak diisi'}\nPerasaan belajar: ${document.getElementById('mood').value}\nTingkat pemahaman (1-5): ${fd.get('level')}\nBagian paling membantu: ${fd.get('favorite')}\nPengertian novel dengan kata sendiri: ${document.getElementById('ownDefinition').value}\nHal baru yang dipelajari: ${document.getElementById('newThing').value}\nPersamaan definisi dari sumber: ${document.getElementById('sourceCompare').value||'Tidak diisi'}\nContoh cerita yang dapat disebut novel: ${document.getElementById('exampleNovel').value||'Tidak diisi'}\nBagian paling berguna dan alasan: ${document.getElementById('useful').value||'Tidak diisi'}\nKeyakinan menjelaskan novel: ${document.getElementById('confidence').value||'Tidak diisi'}\nTarget belajar selanjutnya: ${document.getElementById('nextGoal').value||'Tidak diisi'}\nBagian yang membingungkan: ${document.getElementById('difficulty').value||'Tidak diisi'}\nRencana belajar selanjutnya: ${document.getElementById('strategy').value||'Tidak diisi'}\nPendapat tentang tampilan media: ${document.getElementById('rating').value||'Tidak diisi'}\nSaran: ${document.getElementById('suggestion').value||'Tidak diisi'}\nPesan penyemangat untuk diri sendiri: ${document.getElementById('message').value||'Tidak diisi'}\n`;
+  const blob=new Blob([text],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Refleksi_Pengertian_Novel.txt';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+  document.getElementById('refResult').textContent='Berhasil menyiapkan file refleksi untuk diunduh. Terima kasih sudah mengisi dengan jujur! ♡';
+});
+</script>
+</body>
+</html>
